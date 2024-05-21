@@ -8,3 +8,7 @@ function getComputerChoice (result) {
         return 'Scissors'
     }
 }
+
+function getHumanChoice () {
+    return prompt("Your turn!", "Rock, Paper, or Scissors");
+}
