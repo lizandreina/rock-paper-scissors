@@ -1,14 +1,31 @@
-function getComputerChoice (result) {
+function getComputerChoice(result) {
     result = Math.round(Math.random() * (2 - 0) + 0);
     if (result === 0) {
-        return 'Rock'
+        computerAnswer = 'rock';
+        return 'Rock';
     } else if (result === 1) {
-        return 'Paper'
+        computerAnswer = 'paper';
+        return 'Paper';
     } else {
+        computerAnswer = 'scissors';
         return 'Scissors'
     }
 }
 
-function getHumanChoice () {
-    return prompt("Your turn!", "Rock, Paper, or Scissors");
+let computerAnswer;
+
+function getHumanChoice() {
+    humanAnswer = prompt("Your turn!", "Rock, Paper, or Scissors").toLowerCase();
+    return humanAnswer;
+}
+
+let humanAnswer;
+
+let humanScore = 0;
+let computerScore = 0;
+
+function playRound(computerChoice, humanChoice) {
+    computerChoice = computerAnswer;
+    humanChoice = human;
+    if (computerChoice === 'rock') {
 }
