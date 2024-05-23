@@ -1,7 +1,7 @@
 # rock-paper-scissors
 My first Javascript project!
 
-This is my first project where I applied everything I've learned about JavaScript so far.
+This is my first project where I applied everything I've learned about JavaScript so far. It's a rock-paper-scissors game played against the computer that runs entirely in the console.
 
 After learning a lot of theory up until this point, I finally put my knowledge into practice by working with:
 - Variables.
