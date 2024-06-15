@@ -57,12 +57,26 @@ let points = document.querySelector('.points');
 
 let result = document.querySelector('.result');
 result.textContent = `Your score is ${humanScore} and the computer's score is ${computerScore}`;
-}
 
-// if (humanScore>computerScore) {
-//     console.log('Congrats, you win the game!')
-// } else if (computerScore>humanScore) {
-//     console.log('The computer is the winner :(')
-// } else {
-//     console.log('It\'s a tie! Try again')
-// }
+let winner = document.querySelector('.winner');
+
+    if (computerScore === 5 || humanScore === 5) {
+        if (humanScore>computerScore) {
+            winner.textContent = `Congrats, you win the game!
+            Now start again :)`;
+            points.textContent = '';
+        } else if (computerScore>humanScore) {
+            winner.textContent = `The computer is the winner :(
+            Give it another try`;
+            points.textContent = '';
+        } else {
+            winner.textContent = `It\'s a tie! 
+            Give it another try`;
+            points.textContent = '';
+        }
+        humanScore = 0;
+        computerScore = 0;
+    } else if (humanScore < 5 || humanScore < 5) {
+        winner.textContent = '';
+    }
+}
